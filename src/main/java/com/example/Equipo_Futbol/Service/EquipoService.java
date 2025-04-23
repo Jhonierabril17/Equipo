@@ -6,6 +6,7 @@ import com.example.Equipo_Futbol.Repository.EquipoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EquipoService {
@@ -22,6 +23,7 @@ public class EquipoService {
     }
 
     public Equipo saveEquipo(Equipo equipo) {
+        equipo.setId_equipo(null);
         return equipoRepository.save(equipo);
     }
 

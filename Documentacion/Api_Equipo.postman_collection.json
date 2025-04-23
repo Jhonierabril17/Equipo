@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "8c092c3c-75eb-4d4a-b315-d505fa8fba94",
+		"name": "Api_Equipo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23381814"
+	},
+	"item": [
+		{
+			"name": "Equipo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Equipo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Equipo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {{\"id_equipo\": 1, \"nombre\": \"Real Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1902-03-06\"},\n  {\"id_equipo\": 2, \"nombre\": \"Barcelona\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1899-11-29\"},\n  {\"id_equipo\": 3, \"nombre\": \"Atlético de Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1903-04-26\"},\n  {\"id_equipo\": 4, \"nombre\": \"Valencia\", \"ciudad\": \"Valencia\", \"fundacion\": \"1919-03-18\"},\n  {\"id_equipo\": 5, \"nombre\": \"Sevilla\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1890-01-01\"},\n  {\"id_equipo\": 6, \"nombre\": \"Athletic Club\", \"ciudad\": \"Bilbao\", \"fundacion\": \"1898-01-01\"},\n  {\"id_equipo\": 7, \"nombre\": \"Real Sociedad\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1909-04-07\"},\n  {\"id_equipo\": 8, \"nombre\": \"Villarreal\", \"ciudad\": \"Villarreal\", \"fundacion\": \"1923-03-10\"},\n  {\"id_equipo\": 9, \"nombre\": \"Real Betis\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1907-09-12\"},\n  {\"id_equipo\": 10, \"nombre\": \"Celta de Vigo\", \"ciudad\": \"Vigo\", \"fundacion\": \"1923-08-10\"},\n  {\"id_equipo\": 11, \"nombre\": \"Getafe\", \"ciudad\": \"Getafe\", \"fundacion\": \"1983-09-22\"},\n  {\"id_equipo\": 12, \"nombre\": \"Espanyol\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1900-10-28\"},\n  {\"id_equipo\": 13, \"nombre\": \"Real Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-06-20\"},\n  {\"id_equipo\": 14, \"nombre\": \"Granada\", \"ciudad\": \"Granada\", \"fundacion\": \"1931-04-14\"},\n  {\"id_equipo\": 15, \"nombre\": \"Alavés\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1921-01-23\"},\n  {\"id_equipo\": 16, \"nombre\": \"Mallorca\", \"ciudad\": \"Palma de Mallorca\", \"fundacion\": \"1916-03-05\"},\n  {\"id_equipo\": 17, \"nombre\": \"Leganés\", \"ciudad\": \"Leganés\", \"fundacion\": \"1928-01-01\"},\n  {\"id_equipo\": 18, \"nombre\": \"Eibar\", \"ciudad\": \"Eibar\", \"fundacion\": \"1940-01-01\"},\n  {\"id_equipo\": 19, \"nombre\": \"Osasuna\", \"ciudad\": \"Pamplona\", \"fundacion\": \"1920-10-24\"},\n  {\"id_equipo\": 20, \"nombre\": \"Elche\", \"ciudad\": \"Elche\", \"fundacion\": \"1923-07-05\"},\n  {\"id_equipo\": 21, \"nombre\": \"Burgos\", \"ciudad\": \"Burgos\", \"fundacion\": \"1994-03-02\"},\n  {\"id_equipo\": 22, \"nombre\": \"Tenerife\", \"ciudad\": \"Santa Cruz de Tenerife\", \"fundacion\": \"1922-11-08\"},\n  {\"id_equipo\": 23, \"nombre\": \"Huesca\", \"ciudad\": \"Huesca\", \"fundacion\": \"1960-01-01\"},\n  {\"id_equipo\": 24, \"nombre\": \"Lugo\", \"ciudad\": \"Lugo\", \"fundacion\": \"1953-03-01\"},\n  {\"id_equipo\": 25, \"nombre\": \"Zaragoza\", \"ciudad\": \"Zaragoza\", \"fundacion\": \"1932-03-18\"},\n  {\"id_equipo\": 26, \"nombre\": \"Rayo Vallecano\", \"ciudad\": \"Madrid\", \"fundacion\": \"1924-05-29\"},\n  {\"id_equipo\": 27, \"nombre\": \"Real Oviedo\", \"ciudad\": \"Oviedo\", \"fundacion\": \"1926-03-26\"},\n  {\"id_equipo\": 28, \"nombre\": \"Albacete\", \"ciudad\": \"Albacete\", \"fundacion\": \"1940-04-28\"},\n  {\"id_equipo\": 29, \"nombre\": \"Castellón\", \"ciudad\": \"Castellón de la Plana\", \"fundacion\": \"1922-04-09\"},\n  {\"id_equipo\": 30, \"nombre\": \"Mirandés\", \"ciudad\": \"Miranda de Ebro\", \"fundacion\": \"1927-05-09\"},\n  {\"id_equipo\": 31, \"nombre\": \"Ponferradina\", \"ciudad\": \"Ponferrada\", \"fundacion\": \"1922-11-18\"},\n  {\"id_equipo\": 32, \"nombre\": \"Numancia\", \"ciudad\": \"Soria\", \"fundacion\": \"1945-05-01\"},\n  {\"id_equipo\": 33, \"nombre\": \"Almería\", \"ciudad\": \"Almería\", \"fundacion\": \"1989-09-26\"},\n  {\"id_equipo\": 34, \"nombre\": \"Gimnástica de Torrelavega\", \"ciudad\": \"Torrelavega\", \"fundacion\": \"1913-12-21\"},\n  {\"id_equipo\": 35, \"nombre\": \"Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-07-23\"},\n  {\"id_equipo\": 36, \"nombre\": \"Gimnástica de Ciudad Real\", \"ciudad\": \"Ciudad Real\", \"fundacion\": \"1920-06-06\"},\n  {\"id_equipo\": 37, \"nombre\": \"Córdoba\", \"ciudad\": \"Córdoba\", \"fundacion\": \"1954-02-04\"},\n  {\"id_equipo\": 38, \"nombre\": \"San Sebastián\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1905-03-12\"},\n  {\"id_equipo\": 39, \"nombre\": \"Hércules\", \"ciudad\": \"Alicante\", \"fundacion\": \"1922-06-04\"},\n  {\"id_equipo\": 40, \"nombre\": \"Badajoz\", \"ciudad\": \"Badajoz\", \"fundacion\": \"1923-04-01\"},\n  {\"id_equipo\": 41, \"nombre\": \"Vitoria\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1918-07-16\"},\n  {\"id_equipo\": 42, \"nombre\": \"Algeciras\", \"ciudad\": \"Algeciras\", \"fundacion\": \"1912-02-01\"},\n  {\"id_equipo\": 43, \"nombre\": \"Llagostera\", \"ciudad\": \"Llagostera\", \"fundacion\": \"2005-10-01\"},\n  {\"id_equipo\": 44, \"nombre\": \"Sabadell\", \"ciudad\": \"Sabadell\", \"fundacion\": \"1903-04-01\"},\n  {\"id_equipo\": 45, \"nombre\": \"Lealtad\", \"ciudad\": \"Villaviciosa\", \"fundacion\": \"1960-05-09\"},\n  {\"id_equipo\": 46, \"nombre\": \"Alcorcón\", \"ciudad\": \"Alcorcón\", \"fundacion\": \"1971-06-11\"},\n  {\"id_equipo\": 47, \"nombre\": \"Racing de Santander\", \"ciudad\": \"Santander\", \"fundacion\": \"1913-03-01\"},\n  {\"id_equipo\": 48, \"nombre\": \"Tudelano\", \"ciudad\": \"Tudela\", \"fundacion\": \"1940-06-02\"},\n  {\"id_equipo\": 49, \"nombre\": \"Guadalajara\", \"ciudad\": \"Guadalajara\", \"fundacion\": \"1947-07-09\"},\n  {\"id_equipo\": 50, \"nombre\": \"Cultural Leonesa\", \"ciudad\": \"León\", \"fundacion\": \"1923-04-14\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Jugador",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {{\"id_equipo\": 1, \"nombre\": \"Real Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1902-03-06\"},\n  {\"id_equipo\": 2, \"nombre\": \"Barcelona\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1899-11-29\"},\n  {\"id_equipo\": 3, \"nombre\": \"Atlético de Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1903-04-26\"},\n  {\"id_equipo\": 4, \"nombre\": \"Valencia\", \"ciudad\": \"Valencia\", \"fundacion\": \"1919-03-18\"},\n  {\"id_equipo\": 5, \"nombre\": \"Sevilla\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1890-01-01\"},\n  {\"id_equipo\": 6, \"nombre\": \"Athletic Club\", \"ciudad\": \"Bilbao\", \"fundacion\": \"1898-01-01\"},\n  {\"id_equipo\": 7, \"nombre\": \"Real Sociedad\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1909-04-07\"},\n  {\"id_equipo\": 8, \"nombre\": \"Villarreal\", \"ciudad\": \"Villarreal\", \"fundacion\": \"1923-03-10\"},\n  {\"id_equipo\": 9, \"nombre\": \"Real Betis\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1907-09-12\"},\n  {\"id_equipo\": 10, \"nombre\": \"Celta de Vigo\", \"ciudad\": \"Vigo\", \"fundacion\": \"1923-08-10\"},\n  {\"id_equipo\": 11, \"nombre\": \"Getafe\", \"ciudad\": \"Getafe\", \"fundacion\": \"1983-09-22\"},\n  {\"id_equipo\": 12, \"nombre\": \"Espanyol\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1900-10-28\"},\n  {\"id_equipo\": 13, \"nombre\": \"Real Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-06-20\"},\n  {\"id_equipo\": 14, \"nombre\": \"Granada\", \"ciudad\": \"Granada\", \"fundacion\": \"1931-04-14\"},\n  {\"id_equipo\": 15, \"nombre\": \"Alavés\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1921-01-23\"},\n  {\"id_equipo\": 16, \"nombre\": \"Mallorca\", \"ciudad\": \"Palma de Mallorca\", \"fundacion\": \"1916-03-05\"},\n  {\"id_equipo\": 17, \"nombre\": \"Leganés\", \"ciudad\": \"Leganés\", \"fundacion\": \"1928-01-01\"},\n  {\"id_equipo\": 18, \"nombre\": \"Eibar\", \"ciudad\": \"Eibar\", \"fundacion\": \"1940-01-01\"},\n  {\"id_equipo\": 19, \"nombre\": \"Osasuna\", \"ciudad\": \"Pamplona\", \"fundacion\": \"1920-10-24\"},\n  {\"id_equipo\": 20, \"nombre\": \"Elche\", \"ciudad\": \"Elche\", \"fundacion\": \"1923-07-05\"},\n  {\"id_equipo\": 21, \"nombre\": \"Burgos\", \"ciudad\": \"Burgos\", \"fundacion\": \"1994-03-02\"},\n  {\"id_equipo\": 22, \"nombre\": \"Tenerife\", \"ciudad\": \"Santa Cruz de Tenerife\", \"fundacion\": \"1922-11-08\"},\n  {\"id_equipo\": 23, \"nombre\": \"Huesca\", \"ciudad\": \"Huesca\", \"fundacion\": \"1960-01-01\"},\n  {\"id_equipo\": 24, \"nombre\": \"Lugo\", \"ciudad\": \"Lugo\", \"fundacion\": \"1953-03-01\"},\n  {\"id_equipo\": 25, \"nombre\": \"Zaragoza\", \"ciudad\": \"Zaragoza\", \"fundacion\": \"1932-03-18\"},\n  {\"id_equipo\": 26, \"nombre\": \"Rayo Vallecano\", \"ciudad\": \"Madrid\", \"fundacion\": \"1924-05-29\"},\n  {\"id_equipo\": 27, \"nombre\": \"Real Oviedo\", \"ciudad\": \"Oviedo\", \"fundacion\": \"1926-03-26\"},\n  {\"id_equipo\": 28, \"nombre\": \"Albacete\", \"ciudad\": \"Albacete\", \"fundacion\": \"1940-04-28\"},\n  {\"id_equipo\": 29, \"nombre\": \"Castellón\", \"ciudad\": \"Castellón de la Plana\", \"fundacion\": \"1922-04-09\"},\n  {\"id_equipo\": 30, \"nombre\": \"Mirandés\", \"ciudad\": \"Miranda de Ebro\", \"fundacion\": \"1927-05-09\"},\n  {\"id_equipo\": 31, \"nombre\": \"Ponferradina\", \"ciudad\": \"Ponferrada\", \"fundacion\": \"1922-11-18\"},\n  {\"id_equipo\": 32, \"nombre\": \"Numancia\", \"ciudad\": \"Soria\", \"fundacion\": \"1945-05-01\"},\n  {\"id_equipo\": 33, \"nombre\": \"Almería\", \"ciudad\": \"Almería\", \"fundacion\": \"1989-09-26\"},\n  {\"id_equipo\": 34, \"nombre\": \"Gimnástica de Torrelavega\", \"ciudad\": \"Torrelavega\", \"fundacion\": \"1913-12-21\"},\n  {\"id_equipo\": 35, \"nombre\": \"Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-07-23\"},\n  {\"id_equipo\": 36, \"nombre\": \"Gimnástica de Ciudad Real\", \"ciudad\": \"Ciudad Real\", \"fundacion\": \"1920-06-06\"},\n  {\"id_equipo\": 37, \"nombre\": \"Córdoba\", \"ciudad\": \"Córdoba\", \"fundacion\": \"1954-02-04\"},\n  {\"id_equipo\": 38, \"nombre\": \"San Sebastián\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1905-03-12\"},\n  {\"id_equipo\": 39, \"nombre\": \"Hércules\", \"ciudad\": \"Alicante\", \"fundacion\": \"1922-06-04\"},\n  {\"id_equipo\": 40, \"nombre\": \"Badajoz\", \"ciudad\": \"Badajoz\", \"fundacion\": \"1923-04-01\"},\n  {\"id_equipo\": 41, \"nombre\": \"Vitoria\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1918-07-16\"},\n  {\"id_equipo\": 42, \"nombre\": \"Algeciras\", \"ciudad\": \"Algeciras\", \"fundacion\": \"1912-02-01\"},\n  {\"id_equipo\": 43, \"nombre\": \"Llagostera\", \"ciudad\": \"Llagostera\", \"fundacion\": \"2005-10-01\"},\n  {\"id_equipo\": 44, \"nombre\": \"Sabadell\", \"ciudad\": \"Sabadell\", \"fundacion\": \"1903-04-01\"},\n  {\"id_equipo\": 45, \"nombre\": \"Lealtad\", \"ciudad\": \"Villaviciosa\", \"fundacion\": \"1960-05-09\"},\n  {\"id_equipo\": 46, \"nombre\": \"Alcorcón\", \"ciudad\": \"Alcorcón\", \"fundacion\": \"1971-06-11\"},\n  {\"id_equipo\": 47, \"nombre\": \"Racing de Santander\", \"ciudad\": \"Santander\", \"fundacion\": \"1913-03-01\"},\n  {\"id_equipo\": 48, \"nombre\": \"Tudelano\", \"ciudad\": \"Tudela\", \"fundacion\": \"1940-06-02\"},\n  {\"id_equipo\": 49, \"nombre\": \"Guadalajara\", \"ciudad\": \"Guadalajara\", \"fundacion\": \"1947-07-09\"},\n  {\"id_equipo\": 50, \"nombre\": \"Cultural Leonesa\", \"ciudad\": \"León\", \"fundacion\": \"1923-04-14\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Entrenador",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {{\"id_equipo\": 1, \"nombre\": \"Real Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1902-03-06\"},\n  {\"id_equipo\": 2, \"nombre\": \"Barcelona\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1899-11-29\"},\n  {\"id_equipo\": 3, \"nombre\": \"Atlético de Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1903-04-26\"},\n  {\"id_equipo\": 4, \"nombre\": \"Valencia\", \"ciudad\": \"Valencia\", \"fundacion\": \"1919-03-18\"},\n  {\"id_equipo\": 5, \"nombre\": \"Sevilla\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1890-01-01\"},\n  {\"id_equipo\": 6, \"nombre\": \"Athletic Club\", \"ciudad\": \"Bilbao\", \"fundacion\": \"1898-01-01\"},\n  {\"id_equipo\": 7, \"nombre\": \"Real Sociedad\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1909-04-07\"},\n  {\"id_equipo\": 8, \"nombre\": \"Villarreal\", \"ciudad\": \"Villarreal\", \"fundacion\": \"1923-03-10\"},\n  {\"id_equipo\": 9, \"nombre\": \"Real Betis\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1907-09-12\"},\n  {\"id_equipo\": 10, \"nombre\": \"Celta de Vigo\", \"ciudad\": \"Vigo\", \"fundacion\": \"1923-08-10\"},\n  {\"id_equipo\": 11, \"nombre\": \"Getafe\", \"ciudad\": \"Getafe\", \"fundacion\": \"1983-09-22\"},\n  {\"id_equipo\": 12, \"nombre\": \"Espanyol\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1900-10-28\"},\n  {\"id_equipo\": 13, \"nombre\": \"Real Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-06-20\"},\n  {\"id_equipo\": 14, \"nombre\": \"Granada\", \"ciudad\": \"Granada\", \"fundacion\": \"1931-04-14\"},\n  {\"id_equipo\": 15, \"nombre\": \"Alavés\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1921-01-23\"},\n  {\"id_equipo\": 16, \"nombre\": \"Mallorca\", \"ciudad\": \"Palma de Mallorca\", \"fundacion\": \"1916-03-05\"},\n  {\"id_equipo\": 17, \"nombre\": \"Leganés\", \"ciudad\": \"Leganés\", \"fundacion\": \"1928-01-01\"},\n  {\"id_equipo\": 18, \"nombre\": \"Eibar\", \"ciudad\": \"Eibar\", \"fundacion\": \"1940-01-01\"},\n  {\"id_equipo\": 19, \"nombre\": \"Osasuna\", \"ciudad\": \"Pamplona\", \"fundacion\": \"1920-10-24\"},\n  {\"id_equipo\": 20, \"nombre\": \"Elche\", \"ciudad\": \"Elche\", \"fundacion\": \"1923-07-05\"},\n  {\"id_equipo\": 21, \"nombre\": \"Burgos\", \"ciudad\": \"Burgos\", \"fundacion\": \"1994-03-02\"},\n  {\"id_equipo\": 22, \"nombre\": \"Tenerife\", \"ciudad\": \"Santa Cruz de Tenerife\", \"fundacion\": \"1922-11-08\"},\n  {\"id_equipo\": 23, \"nombre\": \"Huesca\", \"ciudad\": \"Huesca\", \"fundacion\": \"1960-01-01\"},\n  {\"id_equipo\": 24, \"nombre\": \"Lugo\", \"ciudad\": \"Lugo\", \"fundacion\": \"1953-03-01\"},\n  {\"id_equipo\": 25, \"nombre\": \"Zaragoza\", \"ciudad\": \"Zaragoza\", \"fundacion\": \"1932-03-18\"},\n  {\"id_equipo\": 26, \"nombre\": \"Rayo Vallecano\", \"ciudad\": \"Madrid\", \"fundacion\": \"1924-05-29\"},\n  {\"id_equipo\": 27, \"nombre\": \"Real Oviedo\", \"ciudad\": \"Oviedo\", \"fundacion\": \"1926-03-26\"},\n  {\"id_equipo\": 28, \"nombre\": \"Albacete\", \"ciudad\": \"Albacete\", \"fundacion\": \"1940-04-28\"},\n  {\"id_equipo\": 29, \"nombre\": \"Castellón\", \"ciudad\": \"Castellón de la Plana\", \"fundacion\": \"1922-04-09\"},\n  {\"id_equipo\": 30, \"nombre\": \"Mirandés\", \"ciudad\": \"Miranda de Ebro\", \"fundacion\": \"1927-05-09\"},\n  {\"id_equipo\": 31, \"nombre\": \"Ponferradina\", \"ciudad\": \"Ponferrada\", \"fundacion\": \"1922-11-18\"},\n  {\"id_equipo\": 32, \"nombre\": \"Numancia\", \"ciudad\": \"Soria\", \"fundacion\": \"1945-05-01\"},\n  {\"id_equipo\": 33, \"nombre\": \"Almería\", \"ciudad\": \"Almería\", \"fundacion\": \"1989-09-26\"},\n  {\"id_equipo\": 34, \"nombre\": \"Gimnástica de Torrelavega\", \"ciudad\": \"Torrelavega\", \"fundacion\": \"1913-12-21\"},\n  {\"id_equipo\": 35, \"nombre\": \"Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-07-23\"},\n  {\"id_equipo\": 36, \"nombre\": \"Gimnástica de Ciudad Real\", \"ciudad\": \"Ciudad Real\", \"fundacion\": \"1920-06-06\"},\n  {\"id_equipo\": 37, \"nombre\": \"Córdoba\", \"ciudad\": \"Córdoba\", \"fundacion\": \"1954-02-04\"},\n  {\"id_equipo\": 38, \"nombre\": \"San Sebastián\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1905-03-12\"},\n  {\"id_equipo\": 39, \"nombre\": \"Hércules\", \"ciudad\": \"Alicante\", \"fundacion\": \"1922-06-04\"},\n  {\"id_equipo\": 40, \"nombre\": \"Badajoz\", \"ciudad\": \"Badajoz\", \"fundacion\": \"1923-04-01\"},\n  {\"id_equipo\": 41, \"nombre\": \"Vitoria\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1918-07-16\"},\n  {\"id_equipo\": 42, \"nombre\": \"Algeciras\", \"ciudad\": \"Algeciras\", \"fundacion\": \"1912-02-01\"},\n  {\"id_equipo\": 43, \"nombre\": \"Llagostera\", \"ciudad\": \"Llagostera\", \"fundacion\": \"2005-10-01\"},\n  {\"id_equipo\": 44, \"nombre\": \"Sabadell\", \"ciudad\": \"Sabadell\", \"fundacion\": \"1903-04-01\"},\n  {\"id_equipo\": 45, \"nombre\": \"Lealtad\", \"ciudad\": \"Villaviciosa\", \"fundacion\": \"1960-05-09\"},\n  {\"id_equipo\": 46, \"nombre\": \"Alcorcón\", \"ciudad\": \"Alcorcón\", \"fundacion\": \"1971-06-11\"},\n  {\"id_equipo\": 47, \"nombre\": \"Racing de Santander\", \"ciudad\": \"Santander\", \"fundacion\": \"1913-03-01\"},\n  {\"id_equipo\": 48, \"nombre\": \"Tudelano\", \"ciudad\": \"Tudela\", \"fundacion\": \"1940-06-02\"},\n  {\"id_equipo\": 49, \"nombre\": \"Guadalajara\", \"ciudad\": \"Guadalajara\", \"fundacion\": \"1947-07-09\"},\n  {\"id_equipo\": 50, \"nombre\": \"Cultural Leonesa\", \"ciudad\": \"León\", \"fundacion\": \"1923-04-14\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Partido",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {{\"id_equipo\": 1, \"nombre\": \"Real Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1902-03-06\"},\n  {\"id_equipo\": 2, \"nombre\": \"Barcelona\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1899-11-29\"},\n  {\"id_equipo\": 3, \"nombre\": \"Atlético de Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1903-04-26\"},\n  {\"id_equipo\": 4, \"nombre\": \"Valencia\", \"ciudad\": \"Valencia\", \"fundacion\": \"1919-03-18\"},\n  {\"id_equipo\": 5, \"nombre\": \"Sevilla\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1890-01-01\"},\n  {\"id_equipo\": 6, \"nombre\": \"Athletic Club\", \"ciudad\": \"Bilbao\", \"fundacion\": \"1898-01-01\"},\n  {\"id_equipo\": 7, \"nombre\": \"Real Sociedad\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1909-04-07\"},\n  {\"id_equipo\": 8, \"nombre\": \"Villarreal\", \"ciudad\": \"Villarreal\", \"fundacion\": \"1923-03-10\"},\n  {\"id_equipo\": 9, \"nombre\": \"Real Betis\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1907-09-12\"},\n  {\"id_equipo\": 10, \"nombre\": \"Celta de Vigo\", \"ciudad\": \"Vigo\", \"fundacion\": \"1923-08-10\"},\n  {\"id_equipo\": 11, \"nombre\": \"Getafe\", \"ciudad\": \"Getafe\", \"fundacion\": \"1983-09-22\"},\n  {\"id_equipo\": 12, \"nombre\": \"Espanyol\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1900-10-28\"},\n  {\"id_equipo\": 13, \"nombre\": \"Real Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-06-20\"},\n  {\"id_equipo\": 14, \"nombre\": \"Granada\", \"ciudad\": \"Granada\", \"fundacion\": \"1931-04-14\"},\n  {\"id_equipo\": 15, \"nombre\": \"Alavés\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1921-01-23\"},\n  {\"id_equipo\": 16, \"nombre\": \"Mallorca\", \"ciudad\": \"Palma de Mallorca\", \"fundacion\": \"1916-03-05\"},\n  {\"id_equipo\": 17, \"nombre\": \"Leganés\", \"ciudad\": \"Leganés\", \"fundacion\": \"1928-01-01\"},\n  {\"id_equipo\": 18, \"nombre\": \"Eibar\", \"ciudad\": \"Eibar\", \"fundacion\": \"1940-01-01\"},\n  {\"id_equipo\": 19, \"nombre\": \"Osasuna\", \"ciudad\": \"Pamplona\", \"fundacion\": \"1920-10-24\"},\n  {\"id_equipo\": 20, \"nombre\": \"Elche\", \"ciudad\": \"Elche\", \"fundacion\": \"1923-07-05\"},\n  {\"id_equipo\": 21, \"nombre\": \"Burgos\", \"ciudad\": \"Burgos\", \"fundacion\": \"1994-03-02\"},\n  {\"id_equipo\": 22, \"nombre\": \"Tenerife\", \"ciudad\": \"Santa Cruz de Tenerife\", \"fundacion\": \"1922-11-08\"},\n  {\"id_equipo\": 23, \"nombre\": \"Huesca\", \"ciudad\": \"Huesca\", \"fundacion\": \"1960-01-01\"},\n  {\"id_equipo\": 24, \"nombre\": \"Lugo\", \"ciudad\": \"Lugo\", \"fundacion\": \"1953-03-01\"},\n  {\"id_equipo\": 25, \"nombre\": \"Zaragoza\", \"ciudad\": \"Zaragoza\", \"fundacion\": \"1932-03-18\"},\n  {\"id_equipo\": 26, \"nombre\": \"Rayo Vallecano\", \"ciudad\": \"Madrid\", \"fundacion\": \"1924-05-29\"},\n  {\"id_equipo\": 27, \"nombre\": \"Real Oviedo\", \"ciudad\": \"Oviedo\", \"fundacion\": \"1926-03-26\"},\n  {\"id_equipo\": 28, \"nombre\": \"Albacete\", \"ciudad\": \"Albacete\", \"fundacion\": \"1940-04-28\"},\n  {\"id_equipo\": 29, \"nombre\": \"Castellón\", \"ciudad\": \"Castellón de la Plana\", \"fundacion\": \"1922-04-09\"},\n  {\"id_equipo\": 30, \"nombre\": \"Mirandés\", \"ciudad\": \"Miranda de Ebro\", \"fundacion\": \"1927-05-09\"},\n  {\"id_equipo\": 31, \"nombre\": \"Ponferradina\", \"ciudad\": \"Ponferrada\", \"fundacion\": \"1922-11-18\"},\n  {\"id_equipo\": 32, \"nombre\": \"Numancia\", \"ciudad\": \"Soria\", \"fundacion\": \"1945-05-01\"},\n  {\"id_equipo\": 33, \"nombre\": \"Almería\", \"ciudad\": \"Almería\", \"fundacion\": \"1989-09-26\"},\n  {\"id_equipo\": 34, \"nombre\": \"Gimnástica de Torrelavega\", \"ciudad\": \"Torrelavega\", \"fundacion\": \"1913-12-21\"},\n  {\"id_equipo\": 35, \"nombre\": \"Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-07-23\"},\n  {\"id_equipo\": 36, \"nombre\": \"Gimnástica de Ciudad Real\", \"ciudad\": \"Ciudad Real\", \"fundacion\": \"1920-06-06\"},\n  {\"id_equipo\": 37, \"nombre\": \"Córdoba\", \"ciudad\": \"Córdoba\", \"fundacion\": \"1954-02-04\"},\n  {\"id_equipo\": 38, \"nombre\": \"San Sebastián\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1905-03-12\"},\n  {\"id_equipo\": 39, \"nombre\": \"Hércules\", \"ciudad\": \"Alicante\", \"fundacion\": \"1922-06-04\"},\n  {\"id_equipo\": 40, \"nombre\": \"Badajoz\", \"ciudad\": \"Badajoz\", \"fundacion\": \"1923-04-01\"},\n  {\"id_equipo\": 41, \"nombre\": \"Vitoria\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1918-07-16\"},\n  {\"id_equipo\": 42, \"nombre\": \"Algeciras\", \"ciudad\": \"Algeciras\", \"fundacion\": \"1912-02-01\"},\n  {\"id_equipo\": 43, \"nombre\": \"Llagostera\", \"ciudad\": \"Llagostera\", \"fundacion\": \"2005-10-01\"},\n  {\"id_equipo\": 44, \"nombre\": \"Sabadell\", \"ciudad\": \"Sabadell\", \"fundacion\": \"1903-04-01\"},\n  {\"id_equipo\": 45, \"nombre\": \"Lealtad\", \"ciudad\": \"Villaviciosa\", \"fundacion\": \"1960-05-09\"},\n  {\"id_equipo\": 46, \"nombre\": \"Alcorcón\", \"ciudad\": \"Alcorcón\", \"fundacion\": \"1971-06-11\"},\n  {\"id_equipo\": 47, \"nombre\": \"Racing de Santander\", \"ciudad\": \"Santander\", \"fundacion\": \"1913-03-01\"},\n  {\"id_equipo\": 48, \"nombre\": \"Tudelano\", \"ciudad\": \"Tudela\", \"fundacion\": \"1940-06-02\"},\n  {\"id_equipo\": 49, \"nombre\": \"Guadalajara\", \"ciudad\": \"Guadalajara\", \"fundacion\": \"1947-07-09\"},\n  {\"id_equipo\": 50, \"nombre\": \"Cultural Leonesa\", \"ciudad\": \"León\", \"fundacion\": \"1923-04-14\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Estadisticas",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+							"});",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {{\"id_equipo\": 1, \"nombre\": \"Real Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1902-03-06\"},\n  {\"id_equipo\": 2, \"nombre\": \"Barcelona\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1899-11-29\"},\n  {\"id_equipo\": 3, \"nombre\": \"Atlético de Madrid\", \"ciudad\": \"Madrid\", \"fundacion\": \"1903-04-26\"},\n  {\"id_equipo\": 4, \"nombre\": \"Valencia\", \"ciudad\": \"Valencia\", \"fundacion\": \"1919-03-18\"},\n  {\"id_equipo\": 5, \"nombre\": \"Sevilla\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1890-01-01\"},\n  {\"id_equipo\": 6, \"nombre\": \"Athletic Club\", \"ciudad\": \"Bilbao\", \"fundacion\": \"1898-01-01\"},\n  {\"id_equipo\": 7, \"nombre\": \"Real Sociedad\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1909-04-07\"},\n  {\"id_equipo\": 8, \"nombre\": \"Villarreal\", \"ciudad\": \"Villarreal\", \"fundacion\": \"1923-03-10\"},\n  {\"id_equipo\": 9, \"nombre\": \"Real Betis\", \"ciudad\": \"Sevilla\", \"fundacion\": \"1907-09-12\"},\n  {\"id_equipo\": 10, \"nombre\": \"Celta de Vigo\", \"ciudad\": \"Vigo\", \"fundacion\": \"1923-08-10\"},\n  {\"id_equipo\": 11, \"nombre\": \"Getafe\", \"ciudad\": \"Getafe\", \"fundacion\": \"1983-09-22\"},\n  {\"id_equipo\": 12, \"nombre\": \"Espanyol\", \"ciudad\": \"Barcelona\", \"fundacion\": \"1900-10-28\"},\n  {\"id_equipo\": 13, \"nombre\": \"Real Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-06-20\"},\n  {\"id_equipo\": 14, \"nombre\": \"Granada\", \"ciudad\": \"Granada\", \"fundacion\": \"1931-04-14\"},\n  {\"id_equipo\": 15, \"nombre\": \"Alavés\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1921-01-23\"},\n  {\"id_equipo\": 16, \"nombre\": \"Mallorca\", \"ciudad\": \"Palma de Mallorca\", \"fundacion\": \"1916-03-05\"},\n  {\"id_equipo\": 17, \"nombre\": \"Leganés\", \"ciudad\": \"Leganés\", \"fundacion\": \"1928-01-01\"},\n  {\"id_equipo\": 18, \"nombre\": \"Eibar\", \"ciudad\": \"Eibar\", \"fundacion\": \"1940-01-01\"},\n  {\"id_equipo\": 19, \"nombre\": \"Osasuna\", \"ciudad\": \"Pamplona\", \"fundacion\": \"1920-10-24\"},\n  {\"id_equipo\": 20, \"nombre\": \"Elche\", \"ciudad\": \"Elche\", \"fundacion\": \"1923-07-05\"},\n  {\"id_equipo\": 21, \"nombre\": \"Burgos\", \"ciudad\": \"Burgos\", \"fundacion\": \"1994-03-02\"},\n  {\"id_equipo\": 22, \"nombre\": \"Tenerife\", \"ciudad\": \"Santa Cruz de Tenerife\", \"fundacion\": \"1922-11-08\"},\n  {\"id_equipo\": 23, \"nombre\": \"Huesca\", \"ciudad\": \"Huesca\", \"fundacion\": \"1960-01-01\"},\n  {\"id_equipo\": 24, \"nombre\": \"Lugo\", \"ciudad\": \"Lugo\", \"fundacion\": \"1953-03-01\"},\n  {\"id_equipo\": 25, \"nombre\": \"Zaragoza\", \"ciudad\": \"Zaragoza\", \"fundacion\": \"1932-03-18\"},\n  {\"id_equipo\": 26, \"nombre\": \"Rayo Vallecano\", \"ciudad\": \"Madrid\", \"fundacion\": \"1924-05-29\"},\n  {\"id_equipo\": 27, \"nombre\": \"Real Oviedo\", \"ciudad\": \"Oviedo\", \"fundacion\": \"1926-03-26\"},\n  {\"id_equipo\": 28, \"nombre\": \"Albacete\", \"ciudad\": \"Albacete\", \"fundacion\": \"1940-04-28\"},\n  {\"id_equipo\": 29, \"nombre\": \"Castellón\", \"ciudad\": \"Castellón de la Plana\", \"fundacion\": \"1922-04-09\"},\n  {\"id_equipo\": 30, \"nombre\": \"Mirandés\", \"ciudad\": \"Miranda de Ebro\", \"fundacion\": \"1927-05-09\"},\n  {\"id_equipo\": 31, \"nombre\": \"Ponferradina\", \"ciudad\": \"Ponferrada\", \"fundacion\": \"1922-11-18\"},\n  {\"id_equipo\": 32, \"nombre\": \"Numancia\", \"ciudad\": \"Soria\", \"fundacion\": \"1945-05-01\"},\n  {\"id_equipo\": 33, \"nombre\": \"Almería\", \"ciudad\": \"Almería\", \"fundacion\": \"1989-09-26\"},\n  {\"id_equipo\": 34, \"nombre\": \"Gimnástica de Torrelavega\", \"ciudad\": \"Torrelavega\", \"fundacion\": \"1913-12-21\"},\n  {\"id_equipo\": 35, \"nombre\": \"Valladolid\", \"ciudad\": \"Valladolid\", \"fundacion\": \"1928-07-23\"},\n  {\"id_equipo\": 36, \"nombre\": \"Gimnástica de Ciudad Real\", \"ciudad\": \"Ciudad Real\", \"fundacion\": \"1920-06-06\"},\n  {\"id_equipo\": 37, \"nombre\": \"Córdoba\", \"ciudad\": \"Córdoba\", \"fundacion\": \"1954-02-04\"},\n  {\"id_equipo\": 38, \"nombre\": \"San Sebastián\", \"ciudad\": \"San Sebastián\", \"fundacion\": \"1905-03-12\"},\n  {\"id_equipo\": 39, \"nombre\": \"Hércules\", \"ciudad\": \"Alicante\", \"fundacion\": \"1922-06-04\"},\n  {\"id_equipo\": 40, \"nombre\": \"Badajoz\", \"ciudad\": \"Badajoz\", \"fundacion\": \"1923-04-01\"},\n  {\"id_equipo\": 41, \"nombre\": \"Vitoria\", \"ciudad\": \"Vitoria\", \"fundacion\": \"1918-07-16\"},\n  {\"id_equipo\": 42, \"nombre\": \"Algeciras\", \"ciudad\": \"Algeciras\", \"fundacion\": \"1912-02-01\"},\n  {\"id_equipo\": 43, \"nombre\": \"Llagostera\", \"ciudad\": \"Llagostera\", \"fundacion\": \"2005-10-01\"},\n  {\"id_equipo\": 44, \"nombre\": \"Sabadell\", \"ciudad\": \"Sabadell\", \"fundacion\": \"1903-04-01\"},\n  {\"id_equipo\": 45, \"nombre\": \"Lealtad\", \"ciudad\": \"Villaviciosa\", \"fundacion\": \"1960-05-09\"},\n  {\"id_equipo\": 46, \"nombre\": \"Alcorcón\", \"ciudad\": \"Alcorcón\", \"fundacion\": \"1971-06-11\"},\n  {\"id_equipo\": 47, \"nombre\": \"Racing de Santander\", \"ciudad\": \"Santander\", \"fundacion\": \"1913-03-01\"},\n  {\"id_equipo\": 48, \"nombre\": \"Tudelano\", \"ciudad\": \"Tudela\", \"fundacion\": \"1940-06-02\"},\n  {\"id_equipo\": 49, \"nombre\": \"Guadalajara\", \"ciudad\": \"Guadalajara\", \"fundacion\": \"1947-07-09\"},\n  {\"id_equipo\": 50, \"nombre\": \"Cultural Leonesa\", \"ciudad\": \"León\", \"fundacion\": \"1923-04-14\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": ""
+				},
+				"description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+			},
+			"response": []
+		},
+		{
+			"name": "Jugadores por equipo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/Jugador/equipo/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Jugador",
+						"equipo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Jugadores con más de X goles",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Total de goles de un equipo",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Resultados con nombres de equipos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

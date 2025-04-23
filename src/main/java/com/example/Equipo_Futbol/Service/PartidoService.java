@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class PartidoService {
@@ -22,6 +23,7 @@ public class PartidoService {
     }
 
     public Partido savePartido(Partido partido) {
+        partido.setId_partido(null);
         return partidoRepository.save(partido);
     }
 
@@ -41,5 +43,13 @@ public class PartidoService {
 
     public void deletePartido(Long id) {
         partidoRepository.deleteById(id);
+    }
+
+    public Integer totalGolesMarcadosPorEquipo(Long equipoId) {
+        return partidoRepository.totalGolesMarcadosPorEquipo(equipoId);
+    }
+
+    public List<Map<String, Object>> resultadosPartidosConNombres() {
+        return partidoRepository.resultadosPartidosConNombres();
     }
 }

@@ -41,4 +41,8 @@ public class EstadisticasJugadorService {
     public void eliminarEstadistica (Long id) {
         estadisticasjugadorRepository.deleteById(id);
     }
+
+    public List<EstadisticasJugador> jugadoresConMasDeXGoles(int goles) {
+        return estadisticasjugadorRepository.jugadoresConMasDeXGoles(goles);
+    }
 }

@@ -4,12 +4,11 @@ import com.example.Equipo_Futbol.Model.EstadisticasJugador;
 import com.example.Equipo_Futbol.Service.EstadisticasJugadorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/Estadisticas")
 public class EstadisticasJugadorController {
 
@@ -42,5 +41,10 @@ public class EstadisticasJugadorController {
     public ResponseEntity<Void> eliminar(@PathVariable Long id) {
         estadisticasJugadorService.eliminarEstadistica(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/goles")
+    public ResponseEntity<List<EstadisticasJugador>> jugadoresConMasDeXGoles(@RequestParam("minGoles") int goles) {
+        return ResponseEntity.ok(estadisticasJugadorService.jugadoresConMasDeXGoles(goles));
     }
 }

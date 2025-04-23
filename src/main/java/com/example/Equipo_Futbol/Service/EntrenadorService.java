@@ -1,6 +1,7 @@
 package com.example.Equipo_Futbol.Service;
 
 import com.example.Equipo_Futbol.Model.Entrenador;
+import com.example.Equipo_Futbol.Model.Equipo;
 import com.example.Equipo_Futbol.Repository.EntrenadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,7 @@ public class EntrenadorService {
     }
 
     public Entrenador saveEntrenador(Entrenador entrenador) {
+        entrenador.setId_entrenador(null);
         return entrenadorRepository.save(entrenador);
     }
 

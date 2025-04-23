@@ -1,5 +1,6 @@
 package com.example.Equipo_Futbol.Service;
 
+import com.example.Equipo_Futbol.Model.Equipo;
 import com.example.Equipo_Futbol.Model.Jugador;
 import com.example.Equipo_Futbol.Repository.JugadorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,14 @@ public class JugadorService {
         }
 
         public Jugador saveJugador(Jugador jugador) {
+            jugador.setId_Jugador(null);
             return jugadorRepository.save(jugador);
         }
+
+        public List<Jugador> obtenerJugadoresPorEquipo(Long equipoId) {
+            return jugadorRepository.obtenerJugadoresPorEquipo(equipoId);
+        }
+
 
         public Jugador updateJugador(Long id, Jugador jugador) {
             Jugador existing = jugadorRepository.findById(id).orElse(null);
