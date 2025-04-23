@@ -32,5 +32,5 @@ public class Jugador {
     private Equipo equipo;
 
     @OneToMany(mappedBy = "jugador", cascade = CascadeType.ALL)
-    private List<Estadisticas_Jugador> estadisticas;
+    private List<EstadisticasJugador> estadisticas;
 }

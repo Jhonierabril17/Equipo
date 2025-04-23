@@ -36,5 +36,5 @@ public class Partido {
     private Integer goles_visita;
 
     @OneToMany(mappedBy = "partido", cascade = CascadeType.ALL)
-    private List<Estadisticas_Jugador> estadisticas;
+    private List<EstadisticasJugador> estadisticas;
 }

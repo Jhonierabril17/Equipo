@@ -2,7 +2,7 @@ package com.example.Equipo_Futbol.Service;
 
 import com.example.Equipo_Futbol.Model.Equipo;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.example.Equipo_Futbol.Repositoy.EquipoRepository;
+import com.example.Equipo_Futbol.Repository.EquipoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

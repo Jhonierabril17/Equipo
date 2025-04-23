@@ -14,11 +14,17 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Estadisticas_Jugador {
+public class EstadisticasJugador {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_estadistica;
+
+    private Integer minutos_jugados;
+    private Integer goles;
+    private Integer asistencias;
+    private Integer tarjetas_amarillas;
+    private Integer tarjetas_rojas;
 
     @ManyToOne
     @JoinColumn(name = "id_jugador")
@@ -27,10 +33,4 @@ public class Estadisticas_Jugador {
     @ManyToOne
     @JoinColumn(name = "id_partido")
     private Partido partido;
-
-    private Integer minutos_jugados;
-    private Integer goles;
-    private Integer asistencias;
-    private Integer tarjetas_amarillas;
-    private Integer tarjetas_rojas;
 }
